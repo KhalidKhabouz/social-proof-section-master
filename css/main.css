@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+/* Colors */
+/* Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --Soft-pink: hsl(333, 80%, 67%);
+/* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+/* Typography */
+/* Body Copy */
+  --fsize: 15px;
+  --ffamily-spartan: 'Spartan', sans-serif;
+}
+
+body {
+  /* background-color: aquamarine; */
+  font-family: var(--ffamily-spartan);
+  font-size: var(--fsize);
+  line-height: 1.6;
+}
+
+/* Typography */
+
+/* Layout */
+
+.container-main {
+  /* background-color: yellow; */
+  max-width: 100%;
+  padding: 80px 24px;
+}
+
+/* Rating Card */
+
+
+/* User Review Card */
+
+.testimonial-card {
+  padding: 2em;
+  padding-top: 2.625em;
+  margin-bottom: 1em;
+  background-color: var(--very-dark-magenta);
+  border-radius: 8px;
+}
+
+.testimonial-card__header {
+  display: flex;
+}
+
+.testimonial-card__img {
+  border-radius: 50%;
+  max-height: 42px;
+}
+
+.testimonial-card__buyer-info {
+  margin-left: 1.5em;
+}
+
+.buyer-name {
+  font-size: .8rem;
+  color: var(--white);
+}
+
+.buyer-status {
+  color: var(--Soft-pink);
+  font-size: 13px;
+}
+
+.testimonial-card__message {
+  font-size: 13px;
+  color: var(--light-grayish-magenta);
+  padding-top: 2em;
+}
+
+
+
+.review {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5em;
+  margin-bottom: 3em;
+}
+
+.review__info {
+  text-align: center;
+}
+
+.review__title {
+  color: var(--very-dark-magenta);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 .5em;
+  line-height: 1;
+}
+
+.review__subtitle {
+  font-weight: 500;
+  padding-top: 2em;
+  font-size: 14px;
+}
+
+.review__subtitle {
+  color: var(--dark-grayish-magenta);
+}
+
+.review__rating-card {
+  padding: 1em;
+  /* margin-bottom: 1.1em; */
+  background-color: var(--light-grayish-magenta);
+  border-radius: 8px;
+}
+
+.review__rating-card:not(:last-child) {
+  margin-bottom: 1.1em;
+}
+
+.star-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: .5em;
+  margin-bottom: .3em;
+}
+
+.review__rating-title {
+  font-size: .85rem;
+  color: var(--very-dark-magenta);
+  text-align: center;
+}
